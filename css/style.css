@@ -1,0 +1,11 @@
+body, html {
+    height: 100%;
+    overflow-y: clip;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82C2CE;
+}
