@@ -77,3 +77,8 @@ article {
 p {
     font-size: 1.125rem;
 }
+
+header, article, nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
