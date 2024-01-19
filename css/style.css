@@ -9,12 +9,9 @@
     padding: 0;
 }
 
-body, html {
-    height: 100%;
-}
-
 body {
     background-image: url("/img/background.jpg");
+    background-position-x: 50%;
     width: 100%;
 }
 
@@ -37,6 +34,7 @@ nav {
 
 a {
     text-decoration: none;
+    text-align: center;
     font-size: 1.25rem;
     color: black;
 }
@@ -55,11 +53,8 @@ header img {
     max-width: 40rem;
 }
 
-#itch-widget {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem 2rem 1rem;
+iframe {
+    border: none;
 }
 
 article {
@@ -67,7 +62,6 @@ article {
     flex-flow: column nowrap;
     align-items: stretch;
     justify-content: center;
-    max-width: 60rem;
 
     gap: 1rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -82,4 +76,32 @@ p {
 header, article, nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+#itch-widget {
+    max-width: 100%;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#itch-widget iframe {
+    display: block;
+    margin: auto;
+    width: 552px;
+    height: 167px;
+}
+
+@media screen and (max-width: 552px) {
+    #itch-widget {
+        width: calc(552px * 0.7);
+        height: calc(167px * 0.7);
+    }
+    
+    #itch-widget iframe {
+        width: calc(100% * (1.0 / 0.7));
+    
+        transform: scale(0.7);
+        transform-origin: 0 0;
+    }
 }
