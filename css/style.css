@@ -89,13 +89,13 @@ header, article, nav {
 #itch-widget iframe {
     display: block;
     margin: auto;
-    width: 552px;
+    width: 560px;
     height: 167px;
 }
 
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 560px) {
     #itch-widget {
-        width: calc(552px * 0.7);
+        width: calc(560px * 0.7);
         height: calc(167px * 0.7);
     }
     
