@@ -17,6 +17,10 @@ article {
     height: 315px;
 }
 
+p {
+    line-height: 1.375rem;
+}
+
 @media screen and (max-width: 560px) {
     #trailer iframe {
         width: 100vw;
