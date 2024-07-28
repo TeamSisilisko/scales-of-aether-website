@@ -1,5 +1,6 @@
 article {
     text-align: center;
+    max-width: calc(560px - 4rem);
 }
 
 #trailer {

@@ -1,5 +1,5 @@
 ul {
-    line-height: 1.5rem;
+    line-height: 1.625rem;
     padding-left: 1em;
 }
 
@@ -9,4 +9,8 @@ h1 {
 
 h2 {
     text-align: left;
+}
+
+article {
+    max-width: 40rem;
 }
